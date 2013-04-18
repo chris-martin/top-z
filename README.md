@@ -6,7 +6,7 @@ You just created a DOM element for some ephemeral popup, like a context menu or 
 You want to make sure that element appears on top of everything else on the page.
 Maybe you even do this repeatedly, and each new element needs to appear on top of the others.
 You want to do this in a way that works reliably in any situation, even in the presence of
-third-party libraries that also create and position popups in their own ways.
+third-party libraries may have also created and positioned popups in their own ways.
 
 ## The code
 
