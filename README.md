@@ -54,5 +54,14 @@ $(popup).appendTo('body').zIndex(topZ());
 
 ### Why not the topZIndex jQuery plugin
 
-The `topZIndex` plugin I refer to is located here: https://code.google.com/p/topzindex/
-At the time of writing, it is at version 1.2.
+The `topZIndex` plugin I refer to is located at
+https://code.google.com/p/topzindex/
+and is at version 1.2 at the time of this writing.
+
+The problem with simply using this plugin as
+
+```javascript
+$(popup).topZIndex();
+```
+
+is that it can be unacceptably slow if the DOM tree is large.
