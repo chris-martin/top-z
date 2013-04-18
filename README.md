@@ -12,14 +12,17 @@ third-party libraries may have also created and positioned popups in their own w
 
 ### Solution
 
-- Append the popup to `document.body`.
-- Apply `z-index: 0` to every direct child of `document.body` for which `z-index` is unspecified.
-- Give the popup element a higher Z index than all of its siblings.
+*Step (A)* Append the popup to `document.body`.
+
+*Step (B)* Apply `z-index: 0` to every direct child of `document.body` for which `z-index` is unspecified.
+
+*Step (C)* Give the popup element a higher Z index than all of its siblings.
 
 ## The code
 
-`top-z.js` only defines one short function.
-This documentation is more important than the code.
+`top-z.js` just defines one short function that helps you with steps *(B)* and *(C)*.
+This project is more about the documentation than the code; you may want to implement
+this some other way (such as with a different library, if jQuery isn't your thing).
 
 ### Dependencies
 
@@ -30,3 +33,4 @@ A lot of them, I would think.
 ### The `topZ` function
 
 `topZ` is a nullary function with side effects and a return value.
+
