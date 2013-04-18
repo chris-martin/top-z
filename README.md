@@ -52,7 +52,7 @@ $(popup).appendTo('body').zIndex(topZ());
 
 ## Rationale
 
-### Why not the topZIndex jQuery plugin
+### Why not use the topZIndex jQuery plugin?
 
 The `topZIndex` plugin I refer to is located at
 https://code.google.com/p/topzindex/
@@ -65,3 +65,5 @@ $(popup).topZIndex();
 ```
 
 is that it can be unacceptably slow if the DOM tree is large.
+
+### Why is **[B]** necessary?
