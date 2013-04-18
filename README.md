@@ -39,7 +39,6 @@ The side effect is exactly **[B]**.
 The return value is the `z-index` you need to accomplish **[C]**.
 
 If `popup` is a DOM element, this snippet will display it at the top of the Z stack:
-
 ```javascript
 $(popup).appendTo('body').zIndex(topZ());
 ```
