@@ -87,4 +87,4 @@ for an example-based explanation of stacking contexts.
 
 ### Couldn't **[B]** affect the way the rest of the page renders?
 
-I don't have a great justification for this, but I assert that most pages are not designed in this way.
+I don't have a great justification for this, but I assert that most pages are not designed this way.
