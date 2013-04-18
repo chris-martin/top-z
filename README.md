@@ -75,7 +75,7 @@ direct children of `document.body`, which is likely to be a much smaller collect
 This is a somewhat suble point related to how `z-index` works.
 
 See https://developer.mozilla.org/en-US/docs/CSS/Understanding_z-index
-for a decent example
+for an example-based explanation of stacking contexts.
 
 ### Couldn't **[B]** affect the way the rest of the page renders?
 
