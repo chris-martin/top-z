@@ -73,6 +73,14 @@ direct children of `document.body`, which is likely to be a much smaller collect
 ### Why is **[B]** necessary?
 
 This is a somewhat suble point related to how `z-index` works.
+All DOM elements are treated as having `z-index: 0` by default, yet there *is* a difference
+between an element with `z-index: 0` and an element on which `z-index` is not defined at all.
+Setting `z-index` creates a stacking context.
+
+Ensuring that the popup's siblings all have their own stacking contexts means that
+the `z-index`es of the descendants further down the DOM tree become irrelevant;
+the popup now only needs to compete with its siblings.
+This is what enables us to avoid inspecting the entire tree in **[C]**.
 
 See https://developer.mozilla.org/en-US/docs/CSS/Understanding_z-index
 for an example-based explanation of stacking contexts.
