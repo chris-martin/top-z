@@ -64,6 +64,19 @@ The problem with simply using this plugin as
 $(popup).topZIndex();
 ```
 
-is that it can be unacceptably slow if the DOM tree is large.
+is that it can be unacceptably slow if the DOM tree is large,
+because it has to examine every element in the tree.
+
+The stategy advocated by this project, in contrast, only deals with elements that are
+direct children of `document.body`, which is likely to be a much smaller collection.
 
 ### Why is **[B]** necessary?
+
+This is a somewhat suble point related to how `z-index` works.
+
+See https://developer.mozilla.org/en-US/docs/CSS/Understanding_z-index
+for a decent example
+
+### Couldn't **[B]** affect the way the rest of the page renders?
+
+I don't have a great justification for this, but I assert that most pages are not designed in this way.
