@@ -1,5 +1,11 @@
 # Top-z
 
+Display a `popup` element on top of everything else.
+
+```javascript
+$(popup).appendTo('body').zIndex(topZ());
+```
+
 ## Overview
 
 ### Use case
