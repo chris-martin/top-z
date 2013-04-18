@@ -42,7 +42,8 @@ A lot of them, I would think.
 
 The side effect is exactly **[B]**.
 
-The return value is the `z-index` you need to accomplish **[C]**.
+The return value is a number `1` greater than the maximum `z-index` among the
+children of `document.body`. This is the `z-index` you need to accomplish **[C]**.
 
 If `popup` is a DOM element, this snippet will display it at the top of the Z stack:
 
