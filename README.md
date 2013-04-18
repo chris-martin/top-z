@@ -49,3 +49,10 @@ If `popup` is a DOM element, this snippet will display it at the top of the Z st
 ```javascript
 $(popup).appendTo('body').zIndex(topZ());
 ```
+
+## Rationale
+
+### Why not the topZIndex jQuery plugin
+
+The `topZIndex` plugin I refer to is located here: https://code.google.com/p/topzindex/
+At the time of writing, it is at version 1.2.
