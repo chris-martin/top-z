@@ -11,4 +11,3 @@ function topZ() {
     });
     return max + 1;
 }
-
