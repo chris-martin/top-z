@@ -33,8 +33,7 @@ this some other way (such as with a different library, if jQuery isn't your thin
 ### Dependencies
 
 This implementation depends on jQuery and jQuery-UI Core.
-I don't know what versions it supports.
-A lot of them, I would think.
+I don't know what versions. A lot of them, I would think.
 
 ### The `topZ` function
 
