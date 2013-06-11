@@ -7,7 +7,7 @@ var scrollingElement = ...;
 $(popup).appendTo('body').zIndex(topZ());
 ```
 
-In the context of a scrolling element `container` other than the document body:
+Or in the context of a scrolling element `container`:
 
 ```javascript
 $(popup).appendTo(container).zIndex(topZ(container));
