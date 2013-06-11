@@ -1,16 +1,16 @@
 # Top-z
 
-Display a `popup` element on top of everything else:
+Display the element `popup` on top of everything else:
 
 ```javascript
 var scrollingElement = ...;
 $(popup).appendTo('body').zIndex(topZ());
 ```
 
-In the context of a scrolling element other than the document body:
+In the context of a scrolling element `container` other than the document body:
 
 ```javascript
-$(popup).appendTo(scrollingElement).zIndex(topZ(scrollingElement));
+$(popup).appendTo(container).zIndex(topZ(container));
 ```
 
 ## Overview
