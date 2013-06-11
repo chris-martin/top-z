@@ -1,6 +1,6 @@
-function topZ() {
+function topZ(scrollingElement) {
     var max = 0;
-    $('body>*').each(function() {
+    $(scrollingElement || 'body').children().each(function () {
         var el = $(this);
         var z = el.zIndex();
         if (z === 0) {
