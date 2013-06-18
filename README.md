@@ -1,6 +1,18 @@
 # Top-z
 
+```
+// The popup element that needs to show up on top
+var popup;
+```
+
 Display the element `popup` on top of everything else:
+
+```
+$(popup).appendTo('body').zIndex(topZ());
+```
+
+Alternately, when the popup needs to be positioned inside some scrolling element:
+
 
 ```javascript
 // The popup element that needs to show up on top
