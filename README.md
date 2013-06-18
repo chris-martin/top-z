@@ -48,9 +48,12 @@ third-party libraries may have also created and positioned popups in their own w
 
 ## The code
 
-`top-z.js` just defines one short function that helps you with **[B]** and **[C]**.
+`top-z.js` defines a short function that helps you with **[B]** and **[C]**.
 This project is more about the documentation than the code; you may want to implement
 this some other way (such as with a different library, if jQuery isn't your thing).
+
+It also provides the `findContainer` function, which can be used to find an appropriate
+scrolling DOM ancestor.
 
 ### Dependencies
 
