@@ -3,13 +3,16 @@
 Display the element `popup` on top of everything else:
 
 ```javascript
-var scrollingElement = ...;
-$(popup).appendTo('body').zIndex(topZ());
-```
+// The popup element that needs to show up on top
+var popup;
 
-Or in the context of a scrolling element `container`:
+// Some element with respect to which you'll be aligning the popup
+var targetElement; 
 
-```javascript
+// The element to which the popup will be appended
+var container = findContainer(targetElement);
+
+// Add the popup with a z-index higher than its siblings in the container
 $(popup).appendTo(container).zIndex(topZ(container));
 ```
 
