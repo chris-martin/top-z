@@ -11,3 +11,10 @@ function topZ(scrollingElement) {
     });
     return max + 1;
 }
+
+function findContainer(targetElement) {
+    return $(targetElement).parents().filter(function () {
+        var o = $(this).css('overflow');
+        return (o === 'auto' || o === 'scroll') && this.tagName.toUpperCase() !== 'HTML';
+    })[0] || $('body')[0];
+}
